@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>ADD Hospital</title>
+<style>
+     body{
+            border: 2px solid black;
+            height: 630px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        
+    input{
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 5px;
+        padding-left: 20px;
+
+    }
+    input[type=submit]{
+        width: 230px;
+        margin-left: 330px;
+    }
+
+        
+</style>
+
+ </head>
+ 
+ <body>
+     <center>
+        <h1>Hospital Inventory Management- Rest API</h1>    
+ <h1 style="margin-top: 90px;">ADD HOSPITAL</h1>
+
+ <form method="post" action="/inserthosp">
+ 
+ <input type="number" name="HID" placeholder="Hospital Id" required><br><br>
+ <input type="text" name="Name" placeholder="Name" required><br><br>
+ <input type="text" name="Address" placeholder="Address" required><br><br>
+ <input type="number" name="Contact" placeholder="Contact" required><br><br> 
+ <input  type="submit" value="ADD">
+ <input type="number" name="Number_Of_Ventilators" placeholder="Number of ventilators" value="0" style="visibility: hidden;" ><br><br>
+</center>
+</form>
+ </body>
+</html>

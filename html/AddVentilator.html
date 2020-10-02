@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Add Ventilator</title>
+ <style>
+    body{
+            border: 2px solid black;
+            height: 630px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        
+    input{
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 5px;
+        padding-left: 20px;
+
+    }
+    input[type=submit]{
+        width: 230px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    select{
+        width: 320px;
+        height: 30px;
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 5px;
+        padding-left: 1px;
+       
+    }
+
+       
+</style>
+ </head>
+ 
+ <body>
+<center>
+    <h1>Hospital Inventory Management- Rest API</h1>    
+    <h1 style="margin-top: 90px;">ADD VENTILATOR</h1>
+   
+ <form method="post" action="/insertvent">
+
+ <input type="number" name="HID" placeholder="Hospital Id" required><br><br>
+ <input type="number" name="VID" placeholder="Ventialator Id" required><br><br>
+ <input type="text" name="HOSPITAL" placeholder="Hospital name" required><br><br>
+ 
+ <select name="STATUS" id="">
+    <option disabled selected>Select the status of the ventilator</option>
+    <option value="available">Available</option>
+    <option value="occupied">Occupied</option>
+    <option value="in-maintenance">In-Maintenance</option>
+</select><br><br>
+ <input type="submit" value="ADD"></form>
+</center>
+ </body>
+</html>
